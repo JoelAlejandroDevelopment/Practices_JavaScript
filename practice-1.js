@@ -14,4 +14,3 @@ console.log(`Hola ${nombre}, tienes ${edad} años, y el año que viene tendras $
 
 
 console.log("------------------ End ------------------");
-console.log("------------------ Practice 2 ------------------");
