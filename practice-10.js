@@ -1,38 +1,28 @@
-console.log("------------------ Practice 9 ------------------");
+console.log("------------------ Practice 10 ------------------");
 
-console.log("Solicitar al usuario una palabra y mostrar por consola el número de consonantes, vocales y longitud de la palabra.");
+console.log("Dado un array que contiene [azul, amarillo,rojo, verde, rosa] determinar si un color introducido por el usuario a través de un prompt se encuentra dentro del array o no.")
 
-let lenghtString;
-let numeroConsonante = 0;
-let numeroVocales = 0;
+const StringsArray = ["azul", "amarillo", "rojo", "verde", "rosa"];
 let entrada;
+let verificador = Boolean(false);
 
 entrada = prompt("Introduzca una palabra.");
 
-lenghtString = entrada.length;
-lenghtString = Number(lenghtString);
-numeroConsonante = Number(numeroConsonante);
-numeroVocales = Number(numeroVocales);
-
-for(let i = 0; i < lenghtString; i++)
+for(let i = 0; i < 5; i++)
 {
-  switch(entrada[i])
+  if(entrada == StringsArray[i])
   {
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-      numeroVocales++;
-      break;
-    
-    default:
-      numeroConsonante++;
-    break;
+    verificador = true;
   }
 }
 
-console.log(`La longitud de la palabra es: ${lenghtString}`)
-console.log(`El numero de vocales es: ${numeroVocales}.\nY el numero de consonantes es: ${numeroConsonante}.`);
+if(verificador == true)
+{
+  console.log(`La palabra ${entrada} está en la lista de palabras.`)
+}
+else
+{
+  console.log(`La palabra ${entrada} no está en la lista de palabras.`)
+}
 
 console.log("------------------ End ------------------");
