@@ -10,11 +10,11 @@ function factorial(x) {
   return retorno;
 }
 
-let entrada = 0;
+let entrada5 = 0;
 
-entrada = prompt("Ingrese un numero para extraer su factorial");
-entrada = Number(entrada);
+entrada5 = prompt("Ingrese un numero para extraer su factorial");
+entrada5 = Number(entrada5);
 
-console.log(`El factorial de ${entrada} es ${factorial(entrada)}`)
+console.log(`El factorial de ${entrada5} es ${factorial(entrada5)}`)
 
 console.log("------------------ End ------------------");

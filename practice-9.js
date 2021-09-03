@@ -5,18 +5,18 @@ console.log("Solicitar al usuario una palabra y mostrar por consola el número d
 let lenghtString;
 let numeroConsonante = 0;
 let numeroVocales = 0;
-let entrada;
+let entrada9;
 
-entrada = prompt("Introduzca una palabra.");
+entrada9 = prompt("Introduzca una palabra.");
 
-lenghtString = entrada.length;
+lenghtString = entrada9.length;
 lenghtString = Number(lenghtString);
 numeroConsonante = Number(numeroConsonante);
 numeroVocales = Number(numeroVocales);
 
 for(let i = 0; i < lenghtString; i++)
 {
-  switch(entrada[i])
+  switch(entrada9[i])
   {
     case "a":
     case "e":

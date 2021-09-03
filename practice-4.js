@@ -22,21 +22,21 @@ function primo(x) {
   }
 }
 
-let entrada;
+let entrada4;
 
 do
 {
-  entrada = prompt("Ingrese un numero mayor a 1");
-  entrada = Number(entrada);
-}while(entrada <= 1);
+  entrada4 = prompt("Ingrese un numero mayor a 1");
+  entrada4 = Number(entrada4);
+}while(entrada4 <= 1);
 
-if(primo(entrada) == true)
+if(primo(entrada4) == true)
 {
-  console.log(`${entrada} es primo.\n`)
+  console.log(`${entrada4} es primo.\n`)
 }
 else
 {
-  console.log(`${entrada} no es primo.\n`)
+  console.log(`${entrada4} no es primo.\n`)
 }
 
 

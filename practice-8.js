@@ -5,28 +5,28 @@ console.log("const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', '
 
 const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
-let entradaDNI = 0;
-let lenghtentrada;
+let entrada8DNI = 0;
+let lenghtentrada8;
 let posicion = 0;
 let salidaArray = [];
 
 do
 {
-  entradaDNI = prompt("Intrduzuca un numero de DNI, debe tener menos de 8 dijitos");
-  entradaDNI = Number(entradaDNI);
-}while((entradaDNI > 100000000) && (Math.sign(entradaDNI) != 1));
+  entrada8DNI = prompt("Intrduzuca un numero de DNI, debe tener menos de 8 dijitos");
+  entrada8DNI = Number(entrada8DNI);
+}while((entrada8DNI > 100000000) && (Math.sign(entrada8DNI) != 1));
 
-lenghtentrada = String(entradaDNI).length;
-entradaDNI = String(entradaDNI);
+lenghtentrada8 = String(entrada8DNI).length;
+entrada8DNI = String(entrada8DNI);
 
-for(let i = 0; i < lenghtentrada; i++ )
+for(let i = 0; i < lenghtentrada8; i++ )
 {
-  posicion = entradaDNI[i];
+  posicion = entrada8DNI[i];
   posicion = Number(posicion)
   salidaArray.push(letras[posicion]);
 }
 
-console.log(entradaDNI)
+console.log(entrada8DNI)
 console.log(salidaArray)
 
 console.log("------------------ End ------------------");
