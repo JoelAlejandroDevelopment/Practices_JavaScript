@@ -12,9 +12,9 @@ let salidaArray = [];
 
 do
 {
-  entrada8DNI = prompt("Intrduzuca un numero de DNI, debe tener menos de 8 dijitos");
+  entrada8DNI = prompt("Introduzca un numero de DNI, debe tener menos de 8 dijitos");
   entrada8DNI = Number(entrada8DNI);
-}while((entrada8DNI > 100000000) && (Math.sign(entrada8DNI) != 1));
+}while((string(entrada8DNI).length == 8) && (Math.sign(entrada8DNI) != 1));
 
 lenghtentrada8 = String(entrada8DNI).length;
 entrada8DNI = String(entrada8DNI);
